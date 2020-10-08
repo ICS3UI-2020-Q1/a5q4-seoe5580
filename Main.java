@@ -25,6 +25,7 @@ public class Main {
     // Gets the interest rate from the user
     double interest = input.nextDouble();
 
+    // mutiplys by 0.01 so it could be a percentage
     interest = interest * 0.01;
 
     // Asks the user how many years they are going to invest for
@@ -33,9 +34,11 @@ public class Main {
     // Gets the year from the user
     double year = input.nextDouble();
 
+    // this will mutiply money by interest every year and add it with the money 
     for(int i = 1; i <= year; i++){
       money = money + money * interest;
     }
+    // tells the user the answer
     System.out.println("Your final balance would be $" + money);
   }
 }
